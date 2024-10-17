@@ -13,26 +13,27 @@ const ContactUs = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    const handleSubmit = async e => {
+        e.preventDefault ();
         try {
-            const response = await fetch('/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
+            const response = await fetch ('http://localhost:5000/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify (formData),
             });
             if (response.ok) {
-                alert('Message sent successfully!');
+            alert ('Message sent successfully!');
             } else {
-                alert('Failed to send message.');
+            alert ('Failed to send message.');
             }
         } catch (error) {
-            console.error('Error', error);
-            alert('An error occurred while sending the message.');
+            console.error ('Error', error);
+            alert ('An error occurred while sending the message.');
         }
-    };
+        };
+
     return <>
         <div className="p-6">
             <h1 className="text-3xl text-black font-bold text-center mb-4">Send Us Message</h1>

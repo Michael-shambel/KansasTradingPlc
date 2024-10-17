@@ -41,6 +41,21 @@ const Footer = () => {
                             <FaTwitter/>
                         </div>
                     </div>
+                    <div className="rounded-xl">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d38.8452993!3d9.0022193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b57e92f3b6f%3A0x3993dfb4e78fbf9a!2sPrime%20Travel!5e0!3m2!1sen!2s!4v1616161616161" 
+                            frameBorder="0"
+                            width="100%"
+                            height="360"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            style={{ borderRadius: "20px" }} 
+                            allowFullScreen 
+                            aria-hidden="false" 
+                            tabIndex="0">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
